@@ -4,12 +4,12 @@
 #1. setting  make path & file name
 
 
-reference=/home/kun/Row_data/DB/T1T2_R30_P100_P109_R34_H07.fa
+reference=/home/kun/Row_data/DB/barcode11.fasta
 
-DB=/home/kun/Row_data/DB/T1T2_R30_P100_P109_R34_H07.mmi
+DB=/home/kun/Row_data/DB/barcode11.mmi
 
-q_folder=/home/kun/210107/9to12/20210107_0942_MC-110372_0_afj048_d7eba0a7/fastq_pass/barcode12
+q_folder=/home/kun/210107/9to12/20210107_0942_MC-110372_0_afj048_d7eba0a7/fastq_pass/barcode11
 
 
 #merged file name
-m_file=T1T2_R30_P100_P109_R34_H07
+m_file=part_match
