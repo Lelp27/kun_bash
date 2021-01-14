@@ -9,7 +9,7 @@ if( $mkDB ){
 	}
 else{}
 docker exec minimap2 ./git/kun_bash/2.minimap2.sh
-docker exec samtools ./git/kun_bash/3.samtools.sh
+docker exec samtools ./git/kun_bash/3.sam_sort.sh
 
 
 docker stop minimap2, samtools
