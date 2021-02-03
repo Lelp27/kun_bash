@@ -1,0 +1,1 @@
+docker run --rm -it -v ${PWD}:/home/kun -w /home/kun biocontainers/minimap2:v2.15dfsg-1-deb_cv1 /bin/bash

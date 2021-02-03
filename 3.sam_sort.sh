@@ -19,6 +19,4 @@ samtools view -bS $q_folder/sam/$m_file.sam > $q_folder/bam/$m_file.bam
 #sort , index
 samtools sort $q_folder/bam/$m_file.bam -o $q_folder/sort/$m_file-sorted.bam
 samtools index $q_folder/sort/$m_file-sorted.bam
-
 samtools flagstat $q_folder/sort/$m_file-sorted.bam
-

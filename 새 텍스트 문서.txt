@@ -1,0 +1,19 @@
+#도커 공부중.
+
+
+docker ps -a > 켜져있는 컨테이너 보는명령
+
+docker stop [name]
+docker rm [name]
+
+
+#docker 실행명령
+--name string = 도커의 별칭을 정할 수 있음.
+docker run -d -i -t --name minimap2 -v ${PWD}:/home/kun -w /home/kun biocontainers/minimap2:v2.15dfsg-1-deb_cv1
+
+#-i -t 가 있어야 bash 명령들 사용 가능함 이유는 잘..(실행문이없어도 Docker가 꺼지지 않고 Start상태를 유지함)
+#-d = Background 실행
+
+docker exec [name] [command]
+
+- 도커에 명령을 내릴 수 있다.

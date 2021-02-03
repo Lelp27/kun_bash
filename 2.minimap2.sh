@@ -4,6 +4,7 @@ source /home/kun/git/kun_bash/1.setting.sh
 
 mkdir -p $q_folder/sam/
 
+
 count=0
 
 for i in $q_folder/*.fastq

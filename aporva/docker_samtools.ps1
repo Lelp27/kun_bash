@@ -1,0 +1,1 @@
+docker run --rm -it -v ${PWD}:/home/kun -w /home/kun biocontainers/samtools:v1.9-4-deb_cv1 /bin/bash
