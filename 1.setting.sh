@@ -1,14 +1,11 @@
 #!/bin/bash
 
-
-#1. setting  make path & file name
-
-
-reference=/home/kun/Row_data/DB/LacI_GFP/64lib/GFP_module.fasta
-
-DB=/home/kun/Row_data/DB/LacI_GFP/64lib/GFP_module.mmi
-
-q_folder=/home/kun/210121/20210121_0856_MC-110372_0_afj728_3238d6d4/fastq_pass/barcode09
-
-#merged file name
-m_file=GFP_module
+reference=/home/kun/Row_data/DB/LacI_GFP/210315_LacI_GFP.fasta
+DB=${reference/.fasta/.mmi}
+echo $DB
+q_folder=/home/kun/210315/kun/20210315_1545_MC-110372_0_aga495_511d1d2d/fastq_pass/barcode09/filter
+echo $q_folder
+files=$(ls $q_folder/*.fastq)
+echo $files
+outname=$(basename -s .mmi $DB)
+echo $outname

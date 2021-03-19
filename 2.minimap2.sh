@@ -4,14 +4,6 @@ source /home/kun/git/kun_bash/1.setting.sh
 
 mkdir -p $q_folder/sam/
 
-
-count=0
-
-for i in $q_folder/*.fastq
-do
-	minimap2 -ax map-ont $DB $i > $q_folder/sam/$count.sam
-	let count=$count+1
-done
-
+minimap2 -ax map-ont $DB $files > $q_folder/sam/$outname.sam
 
 echo "Job's Done"
